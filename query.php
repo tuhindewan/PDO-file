@@ -45,11 +45,11 @@
 
 		if (isset($_REQUEST['id'])) {
 	
-	$id = $_REQUEST['id'];
-	$statement = $db->prepare("DELETE FROM table_category WHERE cat_id=?");
-	$statement->execute(array($id));
-	
-	$success_message2 = "Category Name has been deleted successfully.";
-		}	
+			$id = $_REQUEST['id'];
+			$statement = $db->prepare("DELETE FROM table_category WHERE cat_id=?");
+			$statement->execute(array($id));
+			
+			$success_message2 = "Category Name has been deleted successfully.";
+				}	
 
 ?>
