@@ -52,4 +52,16 @@
 			$success_message2 = "Category Name has been deleted successfully.";
 				}	
 
+
+
+
+			//Auto increment statement
+
+
+			$statement = $db->prepare("SHOW TABLE STATUS LIKE 'tbl_post'");
+			$statement->execute();
+			$result = $statement->fetchAll();
+			foreach($result as $row)
+			$new_id = $row[10];	
+
 ?>
